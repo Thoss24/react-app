@@ -1,6 +1,6 @@
 import Expense from "./components/Expenses";
 
-function App(prop) {
+function App() {
   const expenses = [
     {
       title: "Toilet paper",
@@ -27,7 +27,7 @@ function App(prop) {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <Expense />
+      <Expense items={expenses} />
     </div>
   );
 }

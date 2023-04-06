@@ -2,7 +2,7 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css'
 
-function ExpenseItem(prop) { // only one root element allowed per statement/JSX code snippet
+const ExpenseItem = (prop) => { // only one root element allowed per statement/JSX code snippet
  
   return (
     <Card className="expense-item">

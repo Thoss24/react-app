@@ -1,6 +1,6 @@
 import Expense from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       title: "Toilet paper",

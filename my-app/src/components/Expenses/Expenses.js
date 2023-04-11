@@ -8,6 +8,8 @@ const Expense = (props) => {
   const filterByYear = (year) => {
     console.log(year)
     console.log("Yes, it's working!")
+
+   // loop through props.items to filter by year
   }
 
   return (

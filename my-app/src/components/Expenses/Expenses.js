@@ -4,10 +4,16 @@ import ExpenseFilter from "./ExpenseFilter";
 import './Expenses.css'
 
 const Expense = (props) => {
+
+  const filterByYear = (year) => {
+    console.log(year)
+    console.log("Yes, it's working!")
+  }
+
   return (
     <div>
     <Card className="expenses">
-    <ExpenseFilter />
+    <ExpenseFilter expenseFilterYear={filterByYear}/>
       <ExpenseItem
         title={props.items[0].title}
         date={props.items[0].date}

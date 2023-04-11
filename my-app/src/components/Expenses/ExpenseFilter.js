@@ -1,9 +1,13 @@
 import './ExpenseFilter.css'
 
-const ExpenseFilter = () => {
+const ExpenseFilter = (props) => {
 
     const yearSelectionHandler = (event) => {
-        console.log(event.target.value)
+        let forwardedYear;
+        if (event.target.value === "2020") {
+        forwardedYear = event.target.value
+        props.expenseFilterYear(forwardedYear) 
+    }
     };
 
     return (

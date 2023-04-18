@@ -8,6 +8,9 @@ const Expense = (props) => {
   const [filteredYear, setFilteredYear] = useState("2023");
 
   const filterByYear = (year) => {
+    console.log(year)
+    console.log(props.items.filter((x) => x.date.getFullYear() === 2020))
+    // filter the expenses array according to the value of 'year'
     setFilteredYear(year);
   };
 

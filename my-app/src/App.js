@@ -6,13 +6,13 @@ const InitialExpenses = [
   {
     id: "e1",
     title: "Toilet paper",
-    date: new Date(2023, 4, 4),
+    date: new Date(2021, 4, 4),
     amount: 10,
   },
   {
     id: "e2",
     title: "Milk",
-    date: new Date(2023, 4, 5),
+    date: new Date(2022, 4, 5),
     amount: 5,
   },
   {
@@ -24,7 +24,7 @@ const InitialExpenses = [
   {
     id: "e4",
     title: "Peanut Butter",
-    date: new Date(2023, 4, 7),
+    date: new Date(2020, 4, 7),
     amount: 20,
   },
 ];

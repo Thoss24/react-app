@@ -8,11 +8,12 @@ const Expense = (props) => {
   const [filteredYear, setFilteredYear] = useState("2023");
 
   const filterByYear = (year) => {
-    console.log(year)
-    console.log(props.items.filter((x) => x.date.getFullYear() === 2020))
-    // filter the expenses array according to the value of 'year'
     setFilteredYear(year);
   };
+
+  const filteredExpenses = props.items.filter((expenses) => {
+    return expenses.date.getFullYear().toString() === filteredYear
+  });
 
   return (
     <div>
@@ -21,7 +22,8 @@ const Expense = (props) => {
           defaultYear={filteredYear}
           expenseFilterYear={filterByYear}
         />
-        {props.items.map((expense => 
+        {}
+        {filteredExpenses.map((expense => 
           <ExpenseItem
             key={expense.id}
             title={expense.title}

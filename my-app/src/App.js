@@ -24,7 +24,7 @@ const InitialExpenses = [
   {
     id: "e4",
     title: "Peanut Butter",
-    date: new Date(2020, 4, 7),
+    date: new Date(2021, 4, 7),
     amount: 20,
   },
 ];

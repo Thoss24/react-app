@@ -33,7 +33,7 @@ const ExpenseForm = (props) => {
     setCurrentAmount('');
     setCurrentDate('');
     props.onSaveExpenseData(expenseData) // triggering onSaveExpenseData which was initialized inside ExpenseForm, passing in new expense item
-    
+    setExpenseDisplaying(false)
   };
 
   const handleOpenExpenseDisplay = () => {
@@ -82,7 +82,7 @@ const ExpenseForm = (props) => {
           </div>
         </div>
         <div className="new-expense__actions">
-          <button onClick={handleCloseExpenseDisplay}>Cancel</button>
+          <button type="button" onClick={handleCloseExpenseDisplay}>Cancel</button>
           <button type="submit">Add Expense</button>
         </div>
         </form>
